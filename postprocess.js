@@ -7,10 +7,14 @@ const json = await readJSON(filename)
 const {_id, values} = json
 console.log(`fetched data for ${json._id}: (${values.length})`)
 
+// Convert units, rouding to 2 decimals, back to Number
+const toLbs = v=>Number(Number(v*/1000).toFixed(2))
+const toKg = v=>Number(Number(v*/2204.6226218).toFixed(2))
+
 const formattedValues = values.map(({value,stamp}) => ({ 
   stamp,
-  lbs: Number(value/1000).toFixed(1),
-  kg: Number(value/2205).toFixed(1)
+  lbs: toLbs(value),
+  kg: toKg(value)
 }));
 await writeJSON('formatted.json', formattedValues) // create a new JSON file with just the Bitcoin price
 console.log("Wrote formatted values")
