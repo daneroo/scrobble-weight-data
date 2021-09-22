@@ -4,7 +4,7 @@ Tracking weight data
 
 This repo archives the latest version of my weight data every 20 minutes.
 
-You can look at [the data table here](https://flatgithub.com/daneroo/scrobble-weight-data?filename=observationdata.json&filters=&sort=stamp%2Cdesc&stickyColumnName=value&tab=values)
+You can look at [the formatted data table here](https://flatgithub.com/daneroo/scrobble-weight-data?filename=formatted.json&filters=&sort=stamp%2Cdesc&stickyColumnName=stamp).
 
 ## References
 
