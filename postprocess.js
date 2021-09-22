@@ -7,9 +7,9 @@ const json = await readJSON(filename)
 const {_id, values} = json
 console.log(`fetched data for ${json._id}: (${values.length})`)
 
-// Convert units, rouding to 2 decimals, back to Number
-const toLbs = v=>Number(Number(v*/1000).toFixed(2))
-const toKg = v=>Number(Number(v*/2204.6226218).toFixed(2))
+// Convert units, rounding to 2 decimals, back to Number
+const toLbs = v=> Number(Number(v/1000).toFixed(2))
+const toKg = v=> Number(Number(v/2204.6226218).toFixed(2))
 
 const formattedValues = values.map(({value,stamp}) => ({ 
   stamp,
