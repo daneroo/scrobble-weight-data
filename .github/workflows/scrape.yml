@@ -24,5 +24,5 @@ jobs:
         with:
           http_url: https://weight.v.imetrical.com/api/observations
           downloaded_filename: observationdata.json 
-          # postprocess: postprocess.js # A postprocessing javascript or typescript file written in Deno
+          postprocess: postprocess.js # A postprocessing javascript or typescript file written in Deno
           # mask: true # optional param to mask the source http_url from the commit. Look at README for more options
