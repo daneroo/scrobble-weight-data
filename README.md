@@ -3,12 +3,14 @@
 Tracking weight data
 
 This repo archives the latest version of my weight data every 20 minutes.
+Was previously using flat action (which has been unreliable) but we can still use it's visualizations.
 
-You can look at [the formatted data table here](https://flatgithub.com/daneroo/scrobble-weight-data?filename=formatted.json&filters=&sort=stamp%2Cdesc&stickyColumnName=stamp).
+You can look at
+[the formatted data table here](https://flatgithub.com/daneroo/scrobble-weight-data?filename=formatted.json&filters=&sort=stamp%2Cdesc&stickyColumnName=stamp).
 
 ## TODO
 
-- [ ]  Commit back changes (instead of flat?)
+- [ ] Commit back changes (instead of flat?)
   - see docs at https://github.com/stefanzweifel/git-auto-commit-action
   - uses: stefanzweifel/git-auto-commit-action@v4
 
@@ -18,8 +20,7 @@ You can look at [the formatted data table here](https://flatgithub.com/daneroo/s
 act
 
 ## equivalent to
-deno run -q --allow-read --allow-write --allow-run --allow-net --allow-env --unstable postprocess.js observationdata.json 
-
+deno run -q --allow-read --allow-write --allow-run --allow-net --allow-env --unstable postprocess.js observationdata.json
 ```
 
 ## References
