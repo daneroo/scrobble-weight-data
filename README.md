@@ -3,7 +3,9 @@
 Tracking weight data
 
 This repo archives the latest version of my weight data every 20 minutes.
-Was previously using flat action (which has been unreliable) but we can still use it's visualizations.
+
+It is now using [git-auto-commit-action](https://github.com/stefanzweifel/git-auto-commit-action).
+It was previously using flat action (which has been unreliable) but we can still use it's visualizations.
 
 You can look at
 [the formatted data table here](https://flatgithub.com/daneroo/scrobble-weight-data?filename=formatted.json&filters=&sort=stamp%2Cdesc&stickyColumnName=stamp).
