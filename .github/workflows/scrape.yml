@@ -6,7 +6,7 @@ on:
       - main
   workflow_dispatch:
   schedule:
-    - cron: '1/20 * * * *'
+    - cron: "1/20 * * * *"
 
 jobs:
   scrape:
@@ -18,7 +18,7 @@ jobs:
       # Get the stamp for the eventual commit message
       - name: Get current date stamp
         id: stamp
-        run: echo "::set-output name=stamp::$(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+        run: echo "stamp=$(date -u +'%Y-%m-%dT%H:%M:%SZ')" >> $GITHUB_ENV
 
       - name: Setup deno
         uses: denoland/setup-deno@v1
@@ -33,7 +33,7 @@ jobs:
       - name: Commit back changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Latest weight data ${{ steps.stamp.outputs.stamp }}
+          commit_message: Latest weight data ${{ env.stamp }}
 
           # Optional glob pattern of files which should be added to the commit
           # Defaults to all (.)
