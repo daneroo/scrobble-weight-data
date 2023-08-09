@@ -4,7 +4,7 @@ Tracking weight data
 
 This repo archives the latest version of my weight data every 20 minutes.
 
-If the repo goes dormant the cron trigger seems to be disabled
+If the repo goes dormant the cron trigger seems to be disabled. (after 60 days)
 
 It is now using [git-auto-commit-action](https://github.com/stefanzweifel/git-auto-commit-action).
 It was previously using flat action (which has been unreliable) but we can still use it's visualizations.
